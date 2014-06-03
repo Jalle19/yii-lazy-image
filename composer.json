@@ -1,0 +1,17 @@
+{
+	"name": "jalle19/yii-lazy-image",
+	"type": "library",
+	"description": "Lazy image loader for the Yii framework",
+	"keywords": ["yii", "lazy", "image", "loader"],
+	"homepage": "https://github.com/Jalle19/yii-lazy-image",
+	"license": "MIT",
+	"require": {
+		"php": ">=5.3.0",
+		"yiisoft/yii": "1.1.*"
+	},
+	"autoload": {
+		"psr-0": {
+			"yiilazyimage": "src/"
+		}
+	}
+}
