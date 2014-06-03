@@ -39,10 +39,10 @@ class LazyImage
 		{
 			$cssClasses = explode(' ', $htmlOptions['class']);
 
-			if (!array_key_exists('lazy', $cssClasses))
-				$cssClasses = 'lazy';
+			if (!in_array('lazy', $cssClasses))
+				$cssClasses[] = 'lazy';
 
-			$htmlOptions['class'] = implode($cssClasses);
+			$htmlOptions['class'] = implode(' ', $cssClasses);
 		}
 		else
 			$htmlOptions['class'] = 'lazy';
