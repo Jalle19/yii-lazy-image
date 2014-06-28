@@ -69,7 +69,7 @@ class LazyImage
 
 		$cs->registerScript(__CLASS__.'_unveil', '
 			$(".lazy").unveil(50);
-		', \CClientScript::POS_READY);
+		', \CClientScript::POS_END);
 	}
 
 }
