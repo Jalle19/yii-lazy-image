@@ -62,7 +62,7 @@ class LazyImage
 		self::$_assetsUrl = $am->publish(realpath(__DIR__.'/../assets'));
 
 		// Register jquery-unveil
-		$script = YII_DEBUG ? 'jquery.unveil.js' : 'jquery.unveil.min.js';
+		$script = YII_DEBUG ? 'jquery-unveil.js' : 'jquery-unveil.min.js';
 
 		$cs->registerScriptFile(self::$_assetsUrl
 				.'/js/'.$script, \CClientScript::POS_END);
